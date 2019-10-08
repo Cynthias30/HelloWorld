@@ -4,13 +4,26 @@
         <title>Hello World</title>
         <link href="https://fonts.googleapis.com/css?		family=Advent+Pro&display=swap" rel="stylesheet">
         <style>
+            .wrapper {
+                margin: 0px;
+                width:100%;
+                height:100vh;
+                position:absolute;
+            }
+            .navigation {
+                width:100%;
+                height:80px;
+                background:#98C3C3;
+            }
             body {
                 background-color:#D0F0F0;
                 font-family: 'Advent Pro', sans-serif; 
+                margin: 0px;
             }
-            h1 {
+            .Title1 {
                 color:blue;
                 text-align:center;
+                text-transform: uppercase;
             }
             p {
                 text-align:center;
@@ -31,10 +44,30 @@
                 border-color:#417E7E;
                 background-color:#70D3D3;
                 color:#417E7E;
-                font-family: 'Advent Pro', sans-serif; 
+                font-family: 'Advent Pro', sans-serif;
+                font-weight:bold;
         	}
             button:hover {
                 width:35vw;
+                font-size:larger;
+                background-color:#46DADA;
+                color:#417E7E;
+                font-family: 'Advent Pro', sans-serif; 
+                font-weight:bold;
+            }
+            .hellobutton {
+                margin: 0px;
+                text-align:center;
+                position:absolute;
+                width:15vw;
+                margin-top:5vh;
+                margin-left:42.5%;
+                font-weight:bold;
+            }
+            .hellobutton:hover {
+                width:20vw;
+                margin-left:40%;
+                font-weight:bold;
                 font-size:larger;
                 background-color:#46DADA;
                 color:#417E7E;
@@ -43,14 +76,26 @@
         </style>
     </head>
     <body>
-        <h1>
-            Hello World Project
-        </h1>
-        <p>
-            This is the first paragraph. 
-        </p>
-        <div>
-            <a href='https://cynthia.wisen.space/' target='_blank'><button><b>A Link to a Website</b></button></a>
+        <div class="wrapper">
+            <div class="navigation">
+                <a href='https://www.w3schools.com/' target='_blank'>
+                    <button class="hellobutton">
+                        w3schools
+                    </button>
+                </a>
+            </div>      
+            <h1 class="Title1">
+                Hello World Project
+            </h1>
+            <p>
+                This is the first paragraph. 
+            </p>
+            <p>
+                Here is another paragraph.
+            </p>
+            <div>
+                <a href='https://cynthia.wisen.space/' target='_blank'><button><b>A Link to a Website</b></button></a>
+            </div>
         </div>
     </body>
 </html>
